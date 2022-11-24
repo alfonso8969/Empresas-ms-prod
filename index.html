@@ -427,6 +427,16 @@
     }
 
   </style>
+  <script type="text/javascript">
+    function disabledForward() {
+      window.location.hash = "no-back-button";
+      window.location.hash = "Again-No-back-button" //chrome
+      window.onhashchange = function () {
+        window.location.hash = "no-back-button";
+      }
+    }
+
+  </script>
   <style>
     @font-face {
       font-family: Montserrat;
@@ -444,11 +454,11 @@
     }
 
   </style>
-  <link rel="stylesheet" href="styles.0a6a40169ca3e4a1.css" media="print" onload="this.media='all'"><noscript>
-    <link rel="stylesheet" href="styles.0a6a40169ca3e4a1.css"></noscript>
+  <link rel="stylesheet" href="styles.7446c0848f66fce7.css" media="print" onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="styles.7446c0848f66fce7.css"></noscript>
 </head>
 
-<body class="fix-header card-no-border fix-sidebar">
+<body class="fix-header card-no-border fix-sidebar" onload="disabledForward()">
   <app-root></app-root>
   <!-- ============================================================== -->
   <!-- All Jquery -->
@@ -481,7 +491,8 @@
   <script src="./assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
   <script src="runtime.6194191142d62845.js" type="module"></script>
   <script src="polyfills.0d61c1bd50cf72c1.js" type="module"></script>
-  <script src="main.d9d8938e4df7acad.js" type="module"></script>
+  <script src="main.cabd5d6f1da5f990.js" type="module"></script>
+
 
 </body>
 
